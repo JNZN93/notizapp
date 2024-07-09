@@ -1,0 +1,155 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .myNotes {
+    max-width: 800px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 48px;
+
+
+  }
+
+  .inputTitle {
+    color: #2e2e2e;
+    margin: 8px;
+    font-size: 24px;
+    border: none;
+  }
+
+  .inputNote {
+    color: #303030;
+    margin: 8px;
+    font-size: 16px;
+    border: none;
+    padding-bottom: 24px;
+  }
+
+
+  .noteForm {
+    width: 75vw;
+    max-width: 1440px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px;
+    border-width: 1px;
+    border-color: #CCCCCC;
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(66,66,66,.75);
+  }
+
+  .note {
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 24px;
+    width: 200px;
+    word-wrap: break-word;
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid rgba(66, 66, 66, 0.18);
+    border-radius: 20px 20px 20px 4px;
+  }
+
+  .add {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .add img {
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .add img:hover {
+    filter: drop-shadow(2px 2px 3px #3a3a3a);
+  }
+
+  input:focus{
+    outline: none;
+}
+
+.trash {
+
+    padding: 8px;
+    align-items: center;
+    width: 16px;
+    cursor: pointer;
+}
+
+.trash:hover {
+    filter: drop-shadow(2px 2px 4px #949090);
+}
+
+.trashDialog {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  z-index: 999;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 0, 0, 0.24);
+}
+
+.d-none {
+  display: none;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h2:hover {
+  color: #303030;
+  cursor: pointer;
+}
+
+.papierkorb {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.papierkorb img {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+.arrow {
+  transform: rotate(90deg);
+  transition: 0.2s;
+}

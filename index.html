@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notiz-App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+</head>
+<body onload="init()" class="lato-regular">
+    <h1>Meine Notizen</h1>
+
+    <div class="noteForm">
+        <input class="inputTitle" type="text" id="title" placeholder="Titel">
+        <input class="inputNote" type="text" id="note" placeholder="Notiz schreiben...">
+        <div class="add"><img onclick="addNote()" src="img/add.png" alt=""></div>
+    </div>
+
+    <div class="myNotes" id="myNotes"></div>
+    <div onclick="openTrash()" class="papierkorb">
+    <h2 >Papierkorb</h2><img src="./img/next.png" id="arrowIcon"></div>
+    <div id="trashContent" class="myNotes d-none">
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
